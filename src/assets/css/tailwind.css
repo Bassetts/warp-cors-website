@@ -9,7 +9,7 @@
     @apply shadow-port-gore;
 
     & > div {
-      @apply bg-stiletto-500;
+      @apply bg-claret-500;
     }
   }
 }
@@ -18,7 +18,7 @@
   @apply bg-port-gore-500 text-white;
 
   & header {
-    @apply shadow-stiletto;
+    @apply shadow-claret;
 
     & > div {
       @apply bg-viridian-500;
@@ -26,8 +26,8 @@
   }
 }
 
-.section-stiletto {
-  @apply bg-stiletto-500 text-white;
+.section-claret {
+  @apply bg-claret-500 text-white;
 
   & header {
     @apply shadow-viridian;
@@ -56,8 +56,8 @@
   filter: drop-shadow(8px 12px 0 theme("colors.viridian.500"));
 }
 
-.shadow-stiletto {
-  filter: drop-shadow(8px 12px 0 theme("colors.stiletto.500"));
+.shadow-claret {
+  filter: drop-shadow(8px 12px 0 theme("colors.claret.500"));
 }
 
 .-rotate-1-deg {

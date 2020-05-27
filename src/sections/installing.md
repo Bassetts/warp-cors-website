@@ -1,7 +1,7 @@
 ---
 title: Installing locally
 order: 3
-colour: stiletto
+colour: claret
 ---
 
 Tart jelly beans cupcake cupcake lollipop. Chocolate cake croissant
