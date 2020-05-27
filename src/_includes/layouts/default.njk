@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{ metadata.description }}" />
+    <title>{{ metadata.title }}</title>
+    <link rel="stylesheet" href="/styles/fonts.css" />
+
+    {% if env.ELEVENTY_ENV === "production" %} {% for css in
+    collections.cssasset %}
+    <style>
+      {{ css.templateContent | safe }}
+    </style>
+    {% endfor %} {% else %}
+    <link rel="stylesheet" href="/styles/styles.css" />
+    {% endif %}
+  </head>
+  <body class="min-h-screen flex flex-col">
+    {% block header %} {% include 'layouts/header.njk' %} {% endblock %}
+
+    <main class="flex-1">
+      {{ content | safe }}
+    </main>
+
+    {% block footer %} {% include 'layouts/footer.njk' %} {% endblock %}
+  </body>
+</html>
