@@ -6,9 +6,11 @@ layout: layouts/default.njk
 <section
   class="section {{  'section-' + section.data.style if section.data.style else '' }} pt-6 pb-12"
 >
-  <div class="max-w-6xl mx-auto px-4">
+  <div
+    class="max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto px-4"
+  >
     <header>
-      <div class="mt-8 mb-12 -ml-8 pt-8 pb-8 pl-8 clip-path-slanted">
+      <div class="mt-8 mb-12 -ml-8 p-8 clip-path-slanted">
         <h1 class="text-4xl font-black -rotate-1-deg">
           {{ section.data.title }}
         </h1>
