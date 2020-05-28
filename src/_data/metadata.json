@@ -1,5 +1,5 @@
 {
-  "title": "warp-co.rs",
+  "title": "warp cors",
   "description": "Enable CORS headers on any request and avoid same-origin policy issues.",
   "author": "Jason Liquorish",
   "repository": "https://github.com/Bassetts/warp-cors",
