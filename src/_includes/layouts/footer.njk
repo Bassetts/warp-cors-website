@@ -1,30 +1,22 @@
 <footer class="py-6 bg-gray-900 text-white">
   <div class="max-w-6xl mx-auto">
     <div class="pt-8 flex justify-center">
-      <a href="https://ko-fi.com/bassetts"
+      {% for logo in metadata.footer.logos %}
+      <a href="{{ logo.link }}"
         ><img
-          src="/assets/images/ko-fi-logo.svg"
-          alt="Ko-fi logo"
-          title="Support me on Ko-fi"
+          src="{{ logo.img }}"
+          alt="{{ logo.alt }}"
+          title="{{ logo.title }}"
           class="mx-4"
           width="40px"
       /></a>
-      <a href="https://github.com/Bassetts/warp-cors"
-        ><img
-          src="/assets/images/github-logo.svg"
-          alt="GitHub logo"
-          title="Github"
-          class="mx-4"
-          width="40px"
-      /></a>
+      {% endfor %}
     </div>
     <div class="pt-8 text-center text-xl font-medium">
       <p>
-        Created with <span role="img" aria-label="love">❤</span> by Jason
-        Liquorish. Have an issue?
-        <a
-          class="text-saffron-500"
-          href="https://github.com/Bassetts/warp-cors/issues/new"
+        Created with <span role="img" aria-label="love">&#x2764;</span> by
+        {{ metadata.author }}. Have an issue?
+        <a class="text-saffron-500" href="{{ metadata.repository }}/issues/new"
           >Report it!</a
         >
       </p>

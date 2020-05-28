@@ -1,4 +1,22 @@
 {
   "title": "warp-co.rs",
-  "description": "Enable CORS headers on any request and avoid same-origin policy issues."
+  "description": "Enable CORS headers on any request and avoid same-origin policy issues.",
+  "author": "Jason Liquorish",
+  "repository": "https://github.com/Bassetts/warp-cors",
+  "footer": {
+    "logos": [
+      {
+        "title": "Support me on Ko-fi",
+        "link": "https://ko-fi.com/bassetts",
+        "img": "/assets/images/ko-fi-logo.svg",
+        "alt": "Ko-fi logo"
+      },
+      {
+        "title": "GitHub",
+        "link": "https://github.com/Bassetts/warp-cors",
+        "img": "/assets/images/github-logo.svg",
+        "alt": "GitHub logo"
+      }
+    ]
+  }
 }
