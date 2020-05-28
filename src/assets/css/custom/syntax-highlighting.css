@@ -35,7 +35,7 @@
     @apply text-purple-400;
   }
 
-  & .token.function {
-    @apply text-green-400;
+  & .token.number {
+    @apply text-white;
   }
 }

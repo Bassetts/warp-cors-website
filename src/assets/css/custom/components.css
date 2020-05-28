@@ -11,6 +11,16 @@
     @apply font-black leading-none;
   }
 
+  & h3 {
+    @apply mt-8;
+    @apply text-xl;
+    @apply font-black leading-none;
+  }
+
+  & a {
+    @apply underline;
+  }
+
   & code {
     @apply rounded-md;
     @apply font-mono whitespace-no-wrap;
