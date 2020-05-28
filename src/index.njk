@@ -4,7 +4,7 @@ layout: layouts/default.njk
 
 {% for section in collections.sectionsSorted %}
 <section
-  class="section {{  'section-' + section.data.style if section.data.style else '' }} pt-6 pb-12"
+  class="section {{  'section-' + section.data.style if section.data.style }} pt-6 pb-12"
 >
   <div
     class="max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto px-4"
