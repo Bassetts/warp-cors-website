@@ -1,0 +1,41 @@
+.token.shebang {
+  @apply text-red-500;
+}
+
+.token.comment {
+  @apply text-gray-500 italic;
+}
+
+.token.assign-left.variable,
+.token.operator,
+.token.punctuation {
+  @apply text-white;
+}
+
+.token.string {
+  @apply text-orange-300;
+}
+
+.token.variable,
+.token.builtin {
+  @apply text-green-400;
+}
+
+.token.keyword,
+.token.variable > .token.operator {
+  @apply text-purple-400;
+}
+
+.token.number {
+  @apply text-orange-500;
+}
+
+.language-shell-session {
+  & .shell-symbol {
+    @apply text-purple-400;
+  }
+
+  & .token.function {
+    @apply text-green-400;
+  }
+}

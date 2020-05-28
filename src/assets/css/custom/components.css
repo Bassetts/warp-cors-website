@@ -1,0 +1,62 @@
+@import "./syntax-highlighting.css";
+
+.section {
+  & p {
+    @apply my-6 leading-7 text-lg;
+  }
+
+  & code {
+    @apply rounded-md;
+    @apply font-mono whitespace-no-wrap;
+  }
+
+  & :not(pre) > code {
+    @apply border border-solid border-gray-400;
+    @apply mx-1 py-1 px-2;
+    @apply text-sm;
+  }
+
+  & pre > code {
+    @apply rounded-md;
+    @apply p-2;
+    @apply bg-gray-900;
+    @apply block w-full whitespace-pre;
+    @apply overflow-x-auto;
+  }
+}
+
+.section-viridian {
+  @apply bg-viridian-500 text-white;
+
+  & header {
+    @apply shadow-port-gore;
+
+    & > div {
+      @apply bg-claret-500;
+    }
+  }
+}
+
+.section-port-gore {
+  @apply bg-port-gore-500 text-white;
+
+  & header {
+    @apply shadow-claret;
+
+    & > div {
+      @apply bg-viridian-500;
+    }
+  }
+}
+
+.section-claret {
+  @apply bg-claret-500 text-white;
+
+  & header {
+    @apply shadow-viridian;
+
+    & > div {
+      @apply bg-port-gore-500;
+    }
+  }
+}
