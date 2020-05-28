@@ -3,13 +3,15 @@ layout: layouts/default.njk
 ---
 
 {% for section in collections.sectionsSorted %}
-<section class="section section-{{ section.data.colour }} pt-6 pb-12 ">
+<section
+  class="section {{  'section-' + section.data.style if section.data.style else '' }} pt-6 pb-12"
+>
   <div class="max-w-6xl mx-auto px-4">
     <header>
-      <div
-        class="mt-8 mb-12 -ml-8 pt-8 pb-8 pl-8 text-4xl font-black clip-path-slanted"
-      >
-        <h2 class="-rotate-1-deg">{{ section.data.title }}</h2>
+      <div class="mt-8 mb-12 -ml-8 pt-8 pb-8 pl-8 clip-path-slanted">
+        <h1 class="text-4xl font-black -rotate-1-deg">
+          {{ section.data.title }}
+        </h1>
       </div>
     </header>
     {{ section.templateContent | safe }}

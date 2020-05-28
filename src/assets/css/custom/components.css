@@ -5,6 +5,12 @@
     @apply my-6 leading-7 text-lg;
   }
 
+  & h2 {
+    @apply mt-12;
+    @apply text-3xl;
+    @apply font-black leading-none;
+  }
+
   & code {
     @apply rounded-md;
     @apply font-mono whitespace-no-wrap;
