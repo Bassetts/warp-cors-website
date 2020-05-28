@@ -7,7 +7,7 @@ const readFile = promisify(fs.readFile);
 
 module.exports = class {
   async data() {
-    const cssFilePath = path.join(__dirname, "tailwind.css");
+    const cssFilePath = path.join(__dirname, "styles.css");
     const isProductionBuild = process.env.ELEVENTY_ENV === "production";
     return {
       permalink: isProductionBuild ? false : "/styles/styles.css",
@@ -20,6 +20,7 @@ module.exports = class {
 
   async render({ css, cssFilePath }) {
     return await postcss([
+      require("postcss-import"),
       require("tailwindcss")("./tailwind.config.js"),
       require("postcss-nesting"),
       require("autoprefixer"),
