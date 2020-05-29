@@ -5,6 +5,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addWatchTarget("./tailwind.config.js");
   eleventyConfig.addWatchTarget("src/assets/css/");
 
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/assets/fonts/");
   eleventyConfig.addPassthroughCopy("src/assets/images/");
 
