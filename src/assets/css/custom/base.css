@@ -1,3 +1,4 @@
 body {
+  @apply bg-gray-200 text-gray-900;
   text-rendering: optimizeLegibility;
 }
