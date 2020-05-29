@@ -4,8 +4,6 @@ style: claret
 order: 3
 ---
 
-## Hello
-
 The code behind the proxy service is open-source and can be used locally from
 your own machine or deployed to your own server. There are a number of ways this
 can be achieved.
