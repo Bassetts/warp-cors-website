@@ -21,5 +21,5 @@ Cookies are not supported, `Cookie` and `Set-Cookie` headers are stripped from
 the request and the proxied response respectively.
 
 If you find this service useful you can support me on
-[Ko-fi](https://ko-fi.com/bassetts) or sponsor me on
-[GitHub](https://github.com/sponsors/Bassetts).
+[Ko-fi](https://ko-fi.com/bassetts) or sponsor me through
+[GitHub Sponsors](https://github.com/sponsors/Bassetts).
